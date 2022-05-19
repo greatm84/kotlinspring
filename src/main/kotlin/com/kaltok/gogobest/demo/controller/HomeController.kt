@@ -10,4 +10,9 @@ class HomeController {
     fun home(): String {
         return "home"
     }
+
+    @GetMapping("/map")
+    fun map():String{
+        return "map"
+    }
 }

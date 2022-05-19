@@ -1,6 +1,6 @@
 package com.kaltok.gogobest.demo.repository
 
-import com.kaltok.gogobest.demo.domain.Member
+import com.kaltok.gogobest.demo.model.Member
 import java.util.*
 
 interface MemberRepository {

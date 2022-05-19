@@ -1,11 +1,9 @@
 package com.kaltok.gogobest.demo.service
 
-import com.kaltok.gogobest.demo.domain.Member
+import com.kaltok.gogobest.demo.model.Member
 import com.kaltok.gogobest.demo.repository.MemberRepository
 import java.util.*
-import javax.transaction.Transactional
 
-@Transactional
 open class MemberService(private val memberRepository: MemberRepository) {
 
     fun join(member: Member): Long {

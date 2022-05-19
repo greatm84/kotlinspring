@@ -1,6 +1,6 @@
 package com.kaltok.gogobest.demo.controller
 
-import com.kaltok.gogobest.demo.domain.Member
+import com.kaltok.gogobest.demo.model.Member
 import com.kaltok.gogobest.demo.service.MemberService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
@@ -32,6 +32,6 @@ class MemberController(
     fun list(model: Model):String{
         val members = memberService.findMembers()
         model.addAttribute("members", members)
-        return "members/memberListm"
+        return "members/memberList"
     }
 }
